@@ -64,10 +64,12 @@ void Automata::printMenu()
         std::cout << i + 1 << ") " <<  this->menu[i] << " (" << this->prices[i] << "$)" << std::endl;
 }
 
-void Automata::printState()
+STATES Automata::printState()
 {
     std::string state = (this->state == READY) ? "ready" : "not ready";
     std::cout << "The machine is " <<  state << "\n";
+
+    return (state == "ready") ? READY : UNREADY;
 }
 
 std::string Automata::choice()

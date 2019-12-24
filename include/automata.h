@@ -17,7 +17,7 @@ public:
     void of();
     void coin();
     void printMenu();
-    void printState();
+    STATES printState();
     std::string choice();
     bool check(int num);
     void cook(int num);
