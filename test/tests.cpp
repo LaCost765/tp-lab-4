@@ -3,5 +3,5 @@
 
 TEST(lab4, task1){
 Automata shop = Automata();
-shop.off();
+shop.of();
 EXPECT_EQ(UNREADY, shop.printState());
